@@ -7,15 +7,19 @@ public class Televisao
 
  
 
-    public float Tamanho { get; set; }
+    public float Tamanho { get; }
     public int Resolucao { get; set; } 
-    public int Volume { get; set; }
+    public int Volume { get; private set; }
     public  int Canal { get; set; }
     public bool Estado { get; set; }
 
     public void AumentarVolume()
     {
-          Volume = Volume + 1;
+        if (Volume < VOL_MAX = 100;
+            Volume++;
+          else
+            Console.WriteLine("TV já está no max.");
+
     }
     
 
